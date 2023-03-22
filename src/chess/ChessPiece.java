@@ -27,11 +27,12 @@ public abstract class ChessPiece extends Piece {
 	public void increaseMoveCount() {
 		moveCount++;
 	}
-	
+	// desfazendo contagem de movimentos
 	public void decreaseMoveCount() {
 		moveCount--;
 	}
 	
+	// verificando se tem peça oponente
 	protected boolean isThereOpponentPiece(Position position) {
 		ChessPiece p = (ChessPiece)getBoard().piece(position);
 		return p != null && p.getColor() != color;

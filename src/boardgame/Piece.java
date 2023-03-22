@@ -20,6 +20,7 @@ public abstract class Piece {
 		return possibleMoves()[position.getRow()][position.getColumn()];
 	}
 	
+	// verificação de possivel movimento
 	public boolean isThereAnyPossibleMove() {
 		boolean[][] mat = possibleMoves();
 		for (int i=0; i<mat.length; i++) {
